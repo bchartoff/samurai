@@ -1,29 +1,74 @@
 <html>
 <body>
-	<div id = "graphic"></div>
-	<script src = "js/S01E12.js"></script>
+<style>
+body{
+	background-color: black;
+}
+.thumb{
+    /* display: list-item; */
+    margin: 15px;
+    padding: 0;
+    /* border: 2px solid #BB0106; */
+    /* width: 100%; */
+    /* margin: 0px; */
+    /* margin-bottom: 19px; */
+    width: calc(25% - 35px);
+    transform: rotate(180deg);
+}
+</style>
 	<script src='http://d3js.org/d3.v2.min.js'></script>
-	<script>
-		svg = d3.select("#graphic")
-			.append("svg")
-			.attr("x",0)
-			.attr("y",0)
-			.attr("width",600)
-			.attr("height",100)
+<img class = "thumb" src="img/S01E01.png"/>
+<img class = "thumb" src="img/S01E02.png"/>
+<img class = "thumb" src="img/S01E03.png"/>
+<img class = "thumb" src="img/S01E04.png"/>
+<img class = "thumb" src="img/S01E05.png"/>
+<img class = "thumb" src="img/S01E06.png"/>
+<img class = "thumb" src="img/S01E07.png"/>
+<img class = "thumb" src="img/S01E08.png"/>
+<img class = "thumb" src="img/S01E09.png"/>
+<img class = "thumb" src="img/S01E10.png"/>
+<img class = "thumb" src="img/S01E11.png"/>
+<img class = "thumb" src="img/S01E12.png"/>
+<img class = "thumb" src="img/S01E13.png"/>
+<img class = "thumb" src="img/S02E01.png"/>
+<img class = "thumb" src="img/S02E02.png"/>
+<img class = "thumb" src="img/S02E03.png"/>
+<img class = "thumb" src="img/S02E04.png"/>
+<img class = "thumb" src="img/S02E05.png"/>
+<img class = "thumb" src="img/S02E06.png"/>
+<img class = "thumb" src="img/S02E07.png"/>
+<img class = "thumb" src="img/S02E08.png"/>
+<img class = "thumb" src="img/S02E09.png"/>
+<img class = "thumb" src="img/S02E10.png"/>
+<img class = "thumb" src="img/S02E11.png"/>
+<img class = "thumb" src="img/S02E12.png"/>
+<img class = "thumb" src="img/S02E13.png"/>
+<img class = "thumb" src="img/S03E01.png"/>
+<img class = "thumb" src="img/S03E02.png"/>
+<img class = "thumb" src="img/S03E03.png"/>
+<img class = "thumb" src="img/S03E04.png"/>
+<img class = "thumb" src="img/S03E05.png"/>
+<img class = "thumb" src="img/S03E06.png"/>
+<img class = "thumb" src="img/S03E07.png"/>
+<img class = "thumb" src="img/S03E08.png"/>
+<img class = "thumb" src="img/S03E09.png"/>
+<img class = "thumb" src="img/S03E10.png"/>
+<img class = "thumb" src="img/S03E11.png"/>
+<img class = "thumb" src="img/S03E12.png"/>
+<img class = "thumb" src="img/S03E13.png"/>
+<img class = "thumb" src="img/S04E01.png"/>
+<img class = "thumb" src="img/S04E02.png"/>
+<img class = "thumb" src="img/S04E03.png"/>
+<img class = "thumb" src="img/S04E04.png"/>
+<img class = "thumb" src="img/S04E05.png"/>
+<img class = "thumb" src="img/S04E06.png"/>
+<img class = "thumb" src="img/S04E07.png"/>
+<img class = "thumb" src="img/S04E08.png"/>
+<img class = "thumb" src="img/S04E09.png"/>
+<img class = "thumb" src="img/S04E10.png"/>
+<img class = "thumb" src="img/S04E11.png"/>
+<img class = "thumb" src="img/S04E12.png"/>
+<img class = "thumb" src="img/S04E13.png"/>
 
-		for(var r=0; r< colors.length; r++){
-			row = colors[r]
-			for(var c=0; c<row.length; c++){
-				color = row[c]
-				// console.log(color)
-				svg.append("rect")
-					.attr("fill",color)
-					.attr("width",4)
-					.attr("height",4)
-					.attr("x",c*1)
-					.attr("y",r*1)
-			}
-		}
-	</script>
 </body>
 </html>
