@@ -1,0 +1,52 @@
+S01E01::The Beginning::Season 1, Episode 1
+S01E02::The Samurai Called Jack::Season 1, Episode 2
+S01E03::The First Fight::Season 1, Episode 3
+S01E04::Jack, the Woolies, and the Chritchellites::Season 1, Episode 4
+S01E05::Jack In Space::Season 1, Episode 5
+S01E06::Jack and the Warrior Woman::Season 1, Episode 6
+S01E07::Jack and the Three Blind Archers::Season 1, Episode 7
+S01E08::Jack versus Mad Jack::Season 1, Episode 8
+S01E09::Jack Under the Sea::Season 1, Episode 9
+S01E10::Jack and the Lava Monster::Season 1, Episode 10
+S01E11::Jack and the Scotsman::Season 1, Episode 11
+S01E12::Jack and the Gangsters::Season 1, Episode 12
+S01E13::Aku's Fairy Tales::Season 1, Episode 13
+S02E01::Jack Learns To Jump Good::Season 2, Episode 1
+S02E02::Jack Tales::Season 2, Episode 2
+S02E03::Jack and the Smackback::Season 2, Episode 3
+S02E04::Jack and the Scotsman Part 2::Season 2, Episode 4
+S02E05::Jack and the Ultra-robots::Season 2, Episode 5
+S02E06::Jack Remembers the Past::Season 2, Episode 6
+S02E07::Jack and the Monks::Season 2, Episode 7
+S02E08::Jack and the Farting Dragon::Season 2, Episode 8
+S02E09::Jack and the Hunters::Season 2, Episode 9
+S02E10::Jack versus Demongo the Soul Collector::Season 2, Episode 10
+S02E11::Jack is Naked::Season 2, Episode 11
+S02E12::Jack and the Spartans::Season 2, Episode 12
+S02E13::Jack's Sandals::Season 2, Episode 13
+S03E01::Chicken Jack::Season 3, Episode 1
+S03E02::Jack and the Rave::Season 3, Episode 2
+S03E03::The Good The Bad and The Beautiful::Season 3, Episode 3
+S03E04::Jack and the Zombies::Season 3, Episode 4
+S03E05::Jack in Egypt::Season 3, Episode 5
+S03E06::Jack and the Travelling Creatures::Season 3, Episode 6
+S03E07::Jack and the Creature::Season 3, Episode 7
+S03E08::Jack and Swamp Monster::Season 3, Episode 8
+S03E09::Jack and the Haunted House::Season 3, Episode 9
+S03E10::Jack The Monks and the Ancient Master's Son::Season 3, Episode 10
+S03E11::The Birth of Evil Part 1::Season 3, Episode 11
+S03E12::The Birth of Evil Part 2::Season 3, Episode 12
+S03E13::Jack and the Labyrinth::Season 3, Episode 13
+S04E01::Samurai versus Ninja::Season 4, Episode 1
+S04E02::Robo Samurai versus Mondo Bot::Season 4, Episode 2
+S04E03::Samurai versus Samurai::Season 4, Episode 3
+S04E04::The Aku Infection::Season 4, Episode 4
+S04E05::The Princess and the Bounty Hunters::Season 4, Episode 5
+S04E06::The Scotsman Saves Jack Part 1::Season 4, Episode 6
+S04E07::The Scotsman Saves Jack Part 2::Season 4, Episode 7
+S04E08::Jack and the Flying Prince and Princess::Season 4, Episode 8
+S04E09::Jack versus Aku::Season 4, Episode 9
+S04E10::The 4 Seasons of Death::Season 4, Episode 10
+S04E11::Tale of X9::Season 4, Episode 11
+S04E12::Young Jack in Africa::Season 4, Episode 12
+S04E13::Jack and the Baby::Season 4, Episode 13
