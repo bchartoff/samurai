@@ -1,0 +1,120 @@
+@media (max-width:1300px){
+	.title, .container{
+		width: calc(33% - 35px) !important;
+	}
+}
+@media (max-width:900px){
+	.title, .container{
+		width: calc(50% - 35px) !important;
+	}
+}
+@media (max-width:600px){
+	.title, .container{
+		width: calc(100% - 35px) !important;
+		margin-left: 5px !important;
+	}
+	#github{
+		left: 28 !important;
+	}
+	#info{
+		left: 88 !important;
+	}
+	h1{
+		margin-left: 20px !important;
+	}
+	.tooltip {
+		/*left: -16px !important;*/
+		padding-left: 20px !important;
+	}
+}
+@media (max-width:370px){
+	#github, #info{
+		top: 106px !important;
+	}
+	.tooltip{
+		top: 154px !important;
+	}
+}
+body{
+	background-color: black;
+}
+.thumb{
+    margin: 15px;
+    padding: 0;
+    width: 100%;
+    z-index: 0;
+}
+.title{
+	width: calc(25% - 35px);
+	font-family: 'Oswald';
+	color: white;
+	position: absolute;
+	margin: 15px;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,.7);
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+.title span{
+	font-size: 14px;
+    display: inherit;
+    padding-top: 8px;
+}
+
+.container{
+    display: inline-block;
+    margin: 15px;
+    width: calc(25% - 35px);
+}
+h1{
+	color: #fff;
+	font-family: 'Oswald';
+	font-size: 30px;
+	margin-left: 30px;
+}
+#github{
+	width: 24px;
+    position: absolute;
+    left: 41px;
+    top: 66px;
+}
+#info{
+	width: 24px;
+    position: absolute;
+    left: 81px;
+    top: 66px;
+}
+.tooltip {
+	position: absolute;
+    width: 164px;
+    top: 114px;
+    left: 2px;
+    font-family: 'Oswald';
+    font-size: 14px;
+    background-color: white;
+    padding: 10px;
+    z-index: 2;
+    /*opacity: 0;*/
+    display: none;
+}
+.tooltip a{
+	color: #c32026;
+	text-decoration: none;
+}
+.tooltip:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 18px;
+	margin-left: -18px;
+}

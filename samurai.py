@@ -104,7 +104,7 @@ def generateMaps():
 #Pixel maps aren't perfect rectangles, so break on index error
               break
 #Convert .txt file to .png
-    subprocess.call(["convert", "text/%s"%file, "img/%s"%file.replace(".txt",".png")])
+    subprocess.call(["convert", "text/%s"%file, "maps/%s"%file.replace(".txt",".png")])
 
 def buildHTML():
 #For the html, convert file names to labels

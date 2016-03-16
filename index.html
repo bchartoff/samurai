@@ -1,389 +1,228 @@
 <html>
 <head>
-<link rel='shortcut icon' type='image/x-icon' href='http://bchartoff.github.io/samurai/favicon.ico' />
-<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel='shortcut icon' type='image/x-icon' href='http://bchartoff.github.io/samurai/favicon.ico' />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
-<style>
-@media (max-width:1300px){
-	.title, .container{
-		width: calc(33% - 35px) !important;
-	}
-}
-@media (max-width:900px){
-	.title, .container{
-		width: calc(50% - 35px) !important;
-	}
-}
-@media (max-width:600px){
-	.title, .container{
-		width: calc(100% - 35px) !important;
-		margin-left: 5px !important;
-	}
-	#github{
-		left: 28 !important;
-	}
-	#info{
-		left: 88 !important;
-	}
-	h1{
-		margin-left: 20px !important;
-	}
-	.tooltip {
-		/*left: -16px !important;*/
-		padding-left: 20px !important;
-	}
-}
-@media (max-width:370px){
-	#github, #info{
-		top: 106px !important;
-	}
-	.tooltip{
-		top: 154px !important;
-	}
-}
-body{
-	background-color: black;
-}
-.thumb{
-    margin: 15px;
-    padding: 0;
-    width: 100%;
-    z-index: 0;
-}
-.title{
-	width: calc(25% - 35px);
-	font-family: 'Oswald';
-	color: white;
-	position: absolute;
-	margin: 15px;
-	font-size: 30px;
-	text-align: center;
-	vertical-align: middle;
-	background-color: rgba(0,0,0,.7);
-	opacity: 0;
-	pointer-events: none;
-	z-index: 1;
-}
-.title span{
-	font-size: 14px;
-    display: inherit;
-    padding-top: 8px;
-}
 
-.container{
-    display: inline-block;
-    margin: 15px;
-    width: calc(25% - 35px);
-}
-h1{
-	color: #fff;
-	font-family: 'Oswald';
-	font-size: 30px;
-	margin-left: 30px;
-}
-#github{
-	width: 24px;
-    position: absolute;
-    left: 41px;
-    top: 66px;
-}
-#info{
-	width: 24px;
-    position: absolute;
-    left: 81px;
-    top: 66px;
-}
-.tooltip {
-	position: absolute;
-    width: 164px;
-    top: 114px;
-    left: 2px;
-    font-family: 'Oswald';
-    font-size: 14px;
-    background-color: white;
-    padding: 10px;
-    z-index: 2;
-    /*opacity: 0;*/
-    display: none;
-}
-.tooltip a{
-	color: #c32026;
-	text-decoration: none;
-}
-.tooltip:after {
-	bottom: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: #fff;
-	border-width: 18px;
-	margin-left: -18px;
-}
-</style>
-<h1>Samurai Jack Color Palettes</h1>
-<a href = "https://github.com/bchartoff/samurai"><img id = "github" src = "images/github.png"/></a>
-<img id = "info" src = "images/info.png"/>
-<div class = tooltip>Each image represents the color palette from one episode of <em>Samurai Jack</em>. I took one screen shot per second, then took the 20 most common colors in each screenshot, and aggregated those colors into the images below. Colors are organized by high to low value (brightness) from bottom to top, then by saturation from left to right. At a given saturation, colors are sorted by hue. Click the Github icon to see the code that generated the images.</div>
+	<h1>Samurai Jack Color Palettes</h1>
+	<a href = "https://github.com/bchartoff/samurai"><img id = "github" src = "img/github.png"/></a>
+	<img id = "info" src = "img/info.png"/>
+	<div class = tooltip>Each image represents the color palette from one episode of <em>Samurai Jack</em>. I took one screen shot per second, then took the 20 most common colors in each screenshot, and aggregated those colors into the images below. Colors are organized by high to low value (brightness) from bottom to top, then by saturation from left to right. At a given saturation, colors are sorted by hue. Click the Github icon to see the code that generated the images.</div>
 
-<div class = "container">
-	<div class = "title">The Beginning<span>Season 1, Episode 1</span></div>
-	<img class = "thumb" src ="img/S01E01.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Samurai Called Jack<span>Season 1, Episode 2</span></div>
-	<img class = "thumb" src ="img/S01E02.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The First Fight<span>Season 1, Episode 3</span></div>
-	<img class = "thumb" src ="img/S01E03.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack, the Woolies, and the Chritchellites<span>Season 1, Episode 4</span></div>
-	<img class = "thumb" src ="img/S01E04.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack In Space<span>Season 1, Episode 5</span></div>
-	<img class = "thumb" src ="img/S01E05.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Warrior Woman<span>Season 1, Episode 6</span></div>
-	<img class = "thumb" src ="img/S01E06.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Three Blind Archers<span>Season 1, Episode 7</span></div>
-	<img class = "thumb" src ="img/S01E07.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack versus Mad Jack<span>Season 1, Episode 8</span></div>
-	<img class = "thumb" src ="img/S01E08.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack Under the Sea<span>Season 1, Episode 9</span></div>
-	<img class = "thumb" src ="img/S01E09.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Lava Monster<span>Season 1, Episode 10</span></div>
-	<img class = "thumb" src ="img/S01E10.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Scotsman<span>Season 1, Episode 11</span></div>
-	<img class = "thumb" src ="img/S01E11.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Gangsters<span>Season 1, Episode 12</span></div>
-	<img class = "thumb" src ="img/S01E12.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Aku's Fairy Tales<span>Season 1, Episode 13</span></div>
-	<img class = "thumb" src ="img/S01E13.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack Learns To Jump Good<span>Season 2, Episode 1</span></div>
-	<img class = "thumb" src ="img/S02E01.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack Tales<span>Season 2, Episode 2</span></div>
-	<img class = "thumb" src ="img/S02E02.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Smackback<span>Season 2, Episode 3</span></div>
-	<img class = "thumb" src ="img/S02E03.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Scotsman Part 2<span>Season 2, Episode 4</span></div>
-	<img class = "thumb" src ="img/S02E04.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Ultra-robots<span>Season 2, Episode 5</span></div>
-	<img class = "thumb" src ="img/S02E05.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack Remembers the Past<span>Season 2, Episode 6</span></div>
-	<img class = "thumb" src ="img/S02E06.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Monks<span>Season 2, Episode 7</span></div>
-	<img class = "thumb" src ="img/S02E07.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Farting Dragon<span>Season 2, Episode 8</span></div>
-	<img class = "thumb" src ="img/S02E08.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Hunters<span>Season 2, Episode 9</span></div>
-	<img class = "thumb" src ="img/S02E09.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack versus Demongo the Soul Collector<span>Season 2, Episode 10</span></div>
-	<img class = "thumb" src ="img/S02E10.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack is Naked<span>Season 2, Episode 11</span></div>
-	<img class = "thumb" src ="img/S02E11.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Spartans<span>Season 2, Episode 12</span></div>
-	<img class = "thumb" src ="img/S02E12.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack's Sandals<span>Season 2, Episode 13</span></div>
-	<img class = "thumb" src ="img/S02E13.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Chicken Jack<span>Season 3, Episode 1</span></div>
-	<img class = "thumb" src ="img/S03E01.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Rave<span>Season 3, Episode 2</span></div>
-	<img class = "thumb" src ="img/S03E02.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Good The Bad and The Beautiful<span>Season 3, Episode 3</span></div>
-	<img class = "thumb" src ="img/S03E03.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Zombies<span>Season 3, Episode 4</span></div>
-	<img class = "thumb" src ="img/S03E04.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack in Egypt<span>Season 3, Episode 5</span></div>
-	<img class = "thumb" src ="img/S03E05.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Travelling Creatures<span>Season 3, Episode 6</span></div>
-	<img class = "thumb" src ="img/S03E06.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Creature<span>Season 3, Episode 7</span></div>
-	<img class = "thumb" src ="img/S03E07.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and Swamp Monster<span>Season 3, Episode 8</span></div>
-	<img class = "thumb" src ="img/S03E08.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Haunted House<span>Season 3, Episode 9</span></div>
-	<img class = "thumb" src ="img/S03E09.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack The Monks and the Ancient Master's Son<span>Season 3, Episode 10</span></div>
-	<img class = "thumb" src ="img/S03E10.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Birth of Evil Part 1<span>Season 3, Episode 11</span></div>
-	<img class = "thumb" src ="img/S03E11.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Birth of Evil Part 2<span>Season 3, Episode 12</span></div>
-	<img class = "thumb" src ="img/S03E12.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Labyrinth<span>Season 3, Episode 13</span></div>
-	<img class = "thumb" src ="img/S03E13.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Samurai versus Ninja<span>Season 4, Episode 1</span></div>
-	<img class = "thumb" src ="img/S04E01.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Robo Samurai versus Mondo Bot<span>Season 4, Episode 2</span></div>
-	<img class = "thumb" src ="img/S04E02.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Samurai versus Samurai<span>Season 4, Episode 3</span></div>
-	<img class = "thumb" src ="img/S04E03.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Aku Infection<span>Season 4, Episode 4</span></div>
-	<img class = "thumb" src ="img/S04E04.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Princess and the Bounty Hunters<span>Season 4, Episode 5</span></div>
-	<img class = "thumb" src ="img/S04E05.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Scotsman Saves Jack Part 1<span>Season 4, Episode 6</span></div>
-	<img class = "thumb" src ="img/S04E06.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The Scotsman Saves Jack Part 2<span>Season 4, Episode 7</span></div>
-	<img class = "thumb" src ="img/S04E07.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Flying Prince and Princess<span>Season 4, Episode 8</span></div>
-	<img class = "thumb" src ="img/S04E08.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack versus Aku<span>Season 4, Episode 9</span></div>
-	<img class = "thumb" src ="img/S04E09.png"/>
-</div>
-<div class = "container">
-	<div class = "title">The 4 Seasons of Death<span>Season 4, Episode 10</span></div>
-	<img class = "thumb" src ="img/S04E10.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Tale of X9<span>Season 4, Episode 11</span></div>
-	<img class = "thumb" src ="img/S04E11.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Young Jack in Africa<span>Season 4, Episode 12</span></div>
-	<img class = "thumb" src ="img/S04E12.png"/>
-</div>
-<div class = "container">
-	<div class = "title">Jack and the Baby<span>Season 4, Episode 13</span></div>
-	<img class = "thumb" src ="img/S04E13.png"/>
-</div>
+	<div class = "container">
+		<div class = "title">The Beginning<span>Season 1, Episode 1</span></div>
+		<img class = "thumb" src ="maps/S01E01.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Samurai Called Jack<span>Season 1, Episode 2</span></div>
+		<img class = "thumb" src ="maps/S01E02.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The First Fight<span>Season 1, Episode 3</span></div>
+		<img class = "thumb" src ="maps/S01E03.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack, the Woolies, and the Chritchellites<span>Season 1, Episode 4</span></div>
+		<img class = "thumb" src ="maps/S01E04.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack In Space<span>Season 1, Episode 5</span></div>
+		<img class = "thumb" src ="maps/S01E05.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Warrior Woman<span>Season 1, Episode 6</span></div>
+		<img class = "thumb" src ="maps/S01E06.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Three Blind Archers<span>Season 1, Episode 7</span></div>
+		<img class = "thumb" src ="maps/S01E07.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack versus Mad Jack<span>Season 1, Episode 8</span></div>
+		<img class = "thumb" src ="maps/S01E08.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack Under the Sea<span>Season 1, Episode 9</span></div>
+		<img class = "thumb" src ="maps/S01E09.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Lava Monster<span>Season 1, Episode 10</span></div>
+		<img class = "thumb" src ="maps/S01E10.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Scotsman<span>Season 1, Episode 11</span></div>
+		<img class = "thumb" src ="maps/S01E11.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Gangsters<span>Season 1, Episode 12</span></div>
+		<img class = "thumb" src ="maps/S01E12.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Aku's Fairy Tales<span>Season 1, Episode 13</span></div>
+		<img class = "thumb" src ="maps/S01E13.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack Learns To Jump Good<span>Season 2, Episode 1</span></div>
+		<img class = "thumb" src ="maps/S02E01.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack Tales<span>Season 2, Episode 2</span></div>
+		<img class = "thumb" src ="maps/S02E02.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Smackback<span>Season 2, Episode 3</span></div>
+		<img class = "thumb" src ="maps/S02E03.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Scotsman Part 2<span>Season 2, Episode 4</span></div>
+		<img class = "thumb" src ="maps/S02E04.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Ultra-robots<span>Season 2, Episode 5</span></div>
+		<img class = "thumb" src ="maps/S02E05.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack Remembers the Past<span>Season 2, Episode 6</span></div>
+		<img class = "thumb" src ="maps/S02E06.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Monks<span>Season 2, Episode 7</span></div>
+		<img class = "thumb" src ="maps/S02E07.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Farting Dragon<span>Season 2, Episode 8</span></div>
+		<img class = "thumb" src ="maps/S02E08.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Hunters<span>Season 2, Episode 9</span></div>
+		<img class = "thumb" src ="maps/S02E09.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack versus Demongo the Soul Collector<span>Season 2, Episode 10</span></div>
+		<img class = "thumb" src ="maps/S02E10.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack is Naked<span>Season 2, Episode 11</span></div>
+		<img class = "thumb" src ="maps/S02E11.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Spartans<span>Season 2, Episode 12</span></div>
+		<img class = "thumb" src ="maps/S02E12.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack's Sandals<span>Season 2, Episode 13</span></div>
+		<img class = "thumb" src ="maps/S02E13.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Chicken Jack<span>Season 3, Episode 1</span></div>
+		<img class = "thumb" src ="maps/S03E01.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Rave<span>Season 3, Episode 2</span></div>
+		<img class = "thumb" src ="maps/S03E02.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Good The Bad and The Beautiful<span>Season 3, Episode 3</span></div>
+		<img class = "thumb" src ="maps/S03E03.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Zombies<span>Season 3, Episode 4</span></div>
+		<img class = "thumb" src ="maps/S03E04.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack in Egypt<span>Season 3, Episode 5</span></div>
+		<img class = "thumb" src ="maps/S03E05.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Travelling Creatures<span>Season 3, Episode 6</span></div>
+		<img class = "thumb" src ="maps/S03E06.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Creature<span>Season 3, Episode 7</span></div>
+		<img class = "thumb" src ="maps/S03E07.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and Swamp Monster<span>Season 3, Episode 8</span></div>
+		<img class = "thumb" src ="maps/S03E08.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Haunted House<span>Season 3, Episode 9</span></div>
+		<img class = "thumb" src ="maps/S03E09.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack The Monks and the Ancient Master's Son<span>Season 3, Episode 10</span></div>
+		<img class = "thumb" src ="maps/S03E10.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Birth of Evil Part 1<span>Season 3, Episode 11</span></div>
+		<img class = "thumb" src ="maps/S03E11.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Birth of Evil Part 2<span>Season 3, Episode 12</span></div>
+		<img class = "thumb" src ="maps/S03E12.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Labyrinth<span>Season 3, Episode 13</span></div>
+		<img class = "thumb" src ="maps/S03E13.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Samurai versus Ninja<span>Season 4, Episode 1</span></div>
+		<img class = "thumb" src ="maps/S04E01.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Robo Samurai versus Mondo Bot<span>Season 4, Episode 2</span></div>
+		<img class = "thumb" src ="maps/S04E02.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Samurai versus Samurai<span>Season 4, Episode 3</span></div>
+		<img class = "thumb" src ="maps/S04E03.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Aku Infection<span>Season 4, Episode 4</span></div>
+		<img class = "thumb" src ="maps/S04E04.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Princess and the Bounty Hunters<span>Season 4, Episode 5</span></div>
+		<img class = "thumb" src ="maps/S04E05.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Scotsman Saves Jack Part 1<span>Season 4, Episode 6</span></div>
+		<img class = "thumb" src ="maps/S04E06.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The Scotsman Saves Jack Part 2<span>Season 4, Episode 7</span></div>
+		<img class = "thumb" src ="maps/S04E07.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Flying Prince and Princess<span>Season 4, Episode 8</span></div>
+		<img class = "thumb" src ="maps/S04E08.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack versus Aku<span>Season 4, Episode 9</span></div>
+		<img class = "thumb" src ="maps/S04E09.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">The 4 Seasons of Death<span>Season 4, Episode 10</span></div>
+		<img class = "thumb" src ="maps/S04E10.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Tale of X9<span>Season 4, Episode 11</span></div>
+		<img class = "thumb" src ="maps/S04E11.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Young Jack in Africa<span>Season 4, Episode 12</span></div>
+		<img class = "thumb" src ="maps/S04E12.png"/>
+	</div>
+	<div class = "container">
+		<div class = "title">Jack and the Baby<span>Season 4, Episode 13</span></div>
+		<img class = "thumb" src ="maps/S04E13.png"/>
+	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src='http://d3js.org/d3.v2.min.js'></script>
-<script>
-function load(){
-	d3.selectAll(".title")
-		.style("height", function(){
-			var container = d3.select(this).node().parentNode
-			var h = d3.select(container).select(".thumb").node().getBoundingClientRect().height
-			return h
-		});
-	d3.selectAll(".thumb")
-		.on("mouseover", function(){
-			var container = d3.select(this).node().parentNode
-			console.log(this, container)
-			d3.select(container).select(".title").transition().style("opacity",1)
-		});
-	d3.selectAll(".thumb")
-		.on("mouseout", function(){
-			var container = d3.select(this).node().parentNode
-			console.log(this, container)
-			d3.select(container).select(".title").transition().style("opacity",0)
-		});
-	d3.select("#github")
-		.on("mouseover", function(){
-			d3.select(this).attr("src","images/github_hover.png")
-		})
-		.on("mouseout", function(){
-			d3.select(this).attr("src","images/github.png")
-		})
-	d3.select("#info")
-		.on("mouseover", function(){
-			d3.select(this).attr("src","images/info_hover.png")
-			d3.select(".tooltip")
-				.style("display","block")
-		})
-		.on("mouseout", function(){
-			d3.select(this).attr("src","images/info.png")
-			d3.select(".tooltip")
-				.style("display","none")
-		})
-}
-$( window ).load(load);		
-$( window ).resize(load);
-</script>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src='js/vendor/d3.v2.min.js'></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
