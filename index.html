@@ -25,15 +25,22 @@
 		left: 28 !important;
 	}
 	#info{
-		left: 68 !important;
+		left: 88 !important;
 	}
 	h1{
 		margin-left: 20px !important;
+	}
+	.tooltip {
+		/*left: -16px !important;*/
+		padding-left: 20px !important;
 	}
 }
 @media (max-width:370px){
 	#github, #info{
 		top: 106px !important;
+	}
+	.tooltip{
+		top: 154px !important;
 	}
 }
 body{
@@ -90,11 +97,11 @@ h1{
 }
 .tooltip {
 	position: absolute;
-    width: 154px;
+    width: 164px;
     top: 114px;
-    left: 7px;
+    left: 2px;
     font-family: 'Oswald';
-    font-size: 16px;
+    font-size: 14px;
     background-color: white;
     padding: 10px;
     z-index: 2;
@@ -123,7 +130,7 @@ h1{
 <h1>Samurai Jack Color Palettes</h1>
 <a href = "https://github.com/bchartoff/samurai"><img id = "github" src = "images/github.png"/></a>
 <img id = "info" src = "images/info.png"/>
-<div class = tooltip>Each image represents the color palette from one episode of <em>Samurai Jack</em>. I took one screen shot per second, then took the 20 most common colors in each screenshot, and aggregated those colors into the images below. Click the Github icon to see the code that generated the images.</div>
+<div class = tooltip>Each image represents the color palette from one episode of <em>Samurai Jack</em>. I took one screen shot per second, then took the 20 most common colors in each screenshot, and aggregated those colors into the images below. Colors are organized by high to low value (brightness) from bottom to top, then by saturation from left to right. At a given saturation, colors are sorted by hue. Click the Github icon to see the code that generated the images.</div>
 
 <div class = "container">
 	<div class = "title">The Beginning<span>Season 1, Episode 1</span></div>
