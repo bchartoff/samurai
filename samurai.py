@@ -54,14 +54,14 @@ def cleanHist():
         c = Color(hexColor)
         lines[i] = c.hsl
     colors = lines
-    colors.sort(key=lambda tup: tup[1])
+    colors.sort(key=lambda tup: tup[1], reverse=True  )
 
     chunk = lambda lst, sz: [lst[i:i+sz] for i in range(0, len(lst), sz)]
 
     colors = chunk(colors, 100)
 
     for row in colors:
-      row.sort(key=lambda tup: (tup[2],  tup[0]))
+      row.sort(key=lambda tup: (tup[2],  tup[0]), reverse=True)
 
     for row in colors:
       row[0:] = [Color(hsl=c).hex for c in row[0:]]
@@ -69,20 +69,24 @@ def cleanHist():
     h = len(colors)
     w = len(colors[0])
     with open('text/%s'%file, 'w') as f:
-      f.write("# ImageMagick pixel enumeration: %i,%i,255,srgb\n"%(h,w))
+      f.write("# ImageMagick pixel enumeration: %i,%i,255,srgb\n"%(h*3,w*3))
       for r in range(0, h):
         for c in range(0, w):
-          try:
-            col = colors[r][c]
-            f.write("%i,%i: "%(r,c))
-            rgb = Color(col).rgb
-            new = (int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255))
-            f.write("%s  "%str(new))
-            f.write(col)
-            f.write("  srgb%s"%str(new))
-            f.write("\n")
-          except IndexError:
-            break
+          for i in range(0, 9):
+            R = r*3
+            C = c*3
+            tups = [(R, C),(R,C+1),(R,C+2),(R+1,C),(R+1,C+1),(R+1,C+2),(R+2,C),(R+2,C+1),(R+2,C+2)]
+            try:
+              col = colors[r][c]
+              f.write("%i,%i: "%tups[i])
+              rgb = Color(col).rgb
+              new = (int(rgb[0]*255), int(rgb[1]*255), int(rgb[2]*255))
+              f.write("%s  "%str(new))
+              f.write(col)
+              f.write("  srgb%s"%str(new))
+              f.write("\n")
+            except IndexError:
+              break
     subprocess.call(["convert", "text/%s"%file, "img/%s"%file.replace(".txt",".png")])
 
 

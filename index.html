@@ -13,11 +13,40 @@ body{
     /* margin: 0px; */
     /* margin-bottom: 19px; */
     width: calc(25% - 35px);
-    transform: rotate(180deg);
+    z-index: 0;
+}
+.svg-clip {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    margin:0 auto;
+    width: calc(25% - 35px);
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    z-index: 100;
+
+
+}
+svg{
+	/*z-index: 100;*/
+	    position: absolute;
+    left: 16px;
+    top: 30px;
 }
 </style>
 	<script src='http://d3js.org/d3.v2.min.js'></script>
+<div>
 <img class = "thumb" src="img/S01E01.png"/>
+<img class="svg-clip" src="foo.png"/>
+        <svg height="0" width="0">
+            <defs>
+                <clippath id="svgPath">
+                    <text x="0" y="0" textLength="1000"  lengthAdjust="spacing" font-family="Lemon" font-size="200px"> SVG Text </text>
+                </clippath>
+            </defs>
+        </svg>
+</div>
+
 <img class = "thumb" src="img/S01E02.png"/>
 <img class = "thumb" src="img/S01E03.png"/>
 <img class = "thumb" src="img/S01E04.png"/>
