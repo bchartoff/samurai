@@ -1,5 +1,6 @@
 <html>
 <body>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
 <style>
 body{
 	background-color: black;
@@ -12,92 +13,291 @@ body{
     /* width: 100%; */
     /* margin: 0px; */
     /* margin-bottom: 19px; */
-    width: calc(25% - 35px);
+    width: 100%;
     z-index: 0;
 }
-.svg-clip {
-    -webkit-clip-path: url(#svgPath);
-    clip-path: url(#svgPath);
-    margin:0 auto;
-    width: calc(25% - 35px);
-    position: absolute;
-    left: 20px;
-    top: 23px;
-    z-index: 100;
-
-
+.title{
+	/*display: inline-block;*/
+	/*width: 100%;*/
+	width: calc(25% - 35px);
+	/*line-height: 10px;*/
+	font-family: 'Oswald';
+	color: white;
+	position: absolute;
+	/*top: 0;*/
+	/*left: 0;*/
+	margin: 15px;
+	font-size: 30px;
+	/*padding-left: 10px;*/
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,.7);
+	opacity: 0;
+	pointer-events: none;
+	cursor: pointer;
+	z-index: 10;
+	/*height: 100%;*/
 }
-svg{
-	/*z-index: 100;*/
-	    position: absolute;
-    left: 16px;
-    top: 30px;
+.title span{
+	font-size: 14px;
+    display: inherit;
+    padding-top: 8px;
+}
+
+.container{
+	/*float: left;*/
+    display: inline-block;
+    margin: 15px;
+    width: calc(25% - 35px);
 }
 </style>
-	<script src='http://d3js.org/d3.v2.min.js'></script>
-<div>
-<img class = "thumb" src="img/S01E01.png"/>
-<img class="svg-clip" src="foo.png"/>
-        <svg height="0" width="0">
-            <defs>
-                <clippath id="svgPath">
-                    <text x="0" y="0" textLength="1000"  lengthAdjust="spacing" font-family="Lemon" font-size="200px"> SVG Text </text>
-                </clippath>
-            </defs>
-        </svg>
+<!-- <h1 class = "bgClip">Jack and the Flying Prince and Princess</h1> -->
+<!-- <div class="bgClip">
+
+<span>
+Clip Text
+</span>
+</div> -->
+<div class = "container">
+	<div class = "title">Jack and the Flying Prince and Princess<span>Season 1, Episode1</span></div>
+	<img class = "thumb" src="img/S01E01.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and the Flying Prince and Princess</div>
+	<img class = "thumb" src="img/S01E02.png"/>
 </div>
 
-<img class = "thumb" src="img/S01E02.png"/>
-<img class = "thumb" src="img/S01E03.png"/>
-<img class = "thumb" src="img/S01E04.png"/>
-<img class = "thumb" src="img/S01E05.png"/>
-<img class = "thumb" src="img/S01E06.png"/>
-<img class = "thumb" src="img/S01E07.png"/>
-<img class = "thumb" src="img/S01E08.png"/>
-<img class = "thumb" src="img/S01E09.png"/>
-<img class = "thumb" src="img/S01E10.png"/>
-<img class = "thumb" src="img/S01E11.png"/>
-<img class = "thumb" src="img/S01E12.png"/>
-<img class = "thumb" src="img/S01E13.png"/>
-<img class = "thumb" src="img/S02E01.png"/>
-<img class = "thumb" src="img/S02E02.png"/>
-<img class = "thumb" src="img/S02E03.png"/>
-<img class = "thumb" src="img/S02E04.png"/>
-<img class = "thumb" src="img/S02E05.png"/>
-<img class = "thumb" src="img/S02E06.png"/>
-<img class = "thumb" src="img/S02E07.png"/>
-<img class = "thumb" src="img/S02E08.png"/>
-<img class = "thumb" src="img/S02E09.png"/>
-<img class = "thumb" src="img/S02E10.png"/>
-<img class = "thumb" src="img/S02E11.png"/>
-<img class = "thumb" src="img/S02E12.png"/>
-<img class = "thumb" src="img/S02E13.png"/>
-<img class = "thumb" src="img/S03E01.png"/>
-<img class = "thumb" src="img/S03E02.png"/>
-<img class = "thumb" src="img/S03E03.png"/>
-<img class = "thumb" src="img/S03E04.png"/>
-<img class = "thumb" src="img/S03E05.png"/>
-<img class = "thumb" src="img/S03E06.png"/>
-<img class = "thumb" src="img/S03E07.png"/>
-<img class = "thumb" src="img/S03E08.png"/>
-<img class = "thumb" src="img/S03E09.png"/>
-<img class = "thumb" src="img/S03E10.png"/>
-<img class = "thumb" src="img/S03E11.png"/>
-<img class = "thumb" src="img/S03E12.png"/>
-<img class = "thumb" src="img/S03E13.png"/>
-<img class = "thumb" src="img/S04E01.png"/>
-<img class = "thumb" src="img/S04E02.png"/>
-<img class = "thumb" src="img/S04E03.png"/>
-<img class = "thumb" src="img/S04E04.png"/>
-<img class = "thumb" src="img/S04E05.png"/>
-<img class = "thumb" src="img/S04E06.png"/>
-<img class = "thumb" src="img/S04E07.png"/>
-<img class = "thumb" src="img/S04E08.png"/>
-<img class = "thumb" src="img/S04E09.png"/>
-<img class = "thumb" src="img/S04E10.png"/>
-<img class = "thumb" src="img/S04E11.png"/>
-<img class = "thumb" src="img/S04E12.png"/>
-<img class = "thumb" src="img/S04E13.png"/>
-
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E03.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E04.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E05.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E06.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E07.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E08.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E09.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E10.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E11.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E12.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S01E13.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E01.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E02.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E03.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E04.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E05.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E06.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E07.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E08.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E09.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E10.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E11.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E12.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S02E13.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E01.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E02.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E03.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E04.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E05.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E06.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E07.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E08.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E09.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E10.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E11.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E12.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S03E13.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E01.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E02.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E03.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E04.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E05.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E06.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E07.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E08.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E09.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E10.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E11.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E12.png"/>
+</div>
+<div class = "container">
+	<div class = "title">Jack and some other things</div>
+	<img class = "thumb" src="img/S04E13.png"/>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src='http://d3js.org/d3.v2.min.js'></script>
+<script>
+// d3.selectAll(".thumb")
+// 	.on("mouseover", function(){
+// 		w = window.innerWidth;
+// 		d3.select(this)
+// 			.transition()
+// 			.duration(2000)
+// 			.style("width",w)
+// 	})
+$( window ).load(function() {
+	d3.selectAll(".title")
+		.style("height", function(){
+			var container = d3.select(this).node().parentNode
+			var h = d3.select(container).select(".thumb").node().getBoundingClientRect().height
+			return h
+		});
+	d3.selectAll(".thumb")
+		.on("mouseover", function(){
+			var container = d3.select(this).node().parentNode
+			console.log(this, container)
+			d3.select(container).select(".title").transition().style("opacity",1)
+		});
+	d3.selectAll(".thumb")
+		.on("mouseout", function(){
+			var container = d3.select(this).node().parentNode
+			console.log(this, container)
+			d3.select(container).select(".title").transition().style("opacity",0)
+		});
+});		
+</script>
 </body>
 </html>

@@ -89,10 +89,24 @@ def cleanHist():
               break
     subprocess.call(["convert", "text/%s"%file, "img/%s"%file.replace(".txt",".png")])
 
+def buildHTML():
+  for vid in os.listdir(sourceDir):
+  fileParts = re.search('Samurai\.Jack\.S(\d*)E(\d*)\.(\w*)\.(.*)\.avi', vid)
+  season = fileParts.group(1)
+  episode = fileParts.group(2)
+  chapter = fileParts.group(3)
+  title = fileParts.group(4).replace("."," ")
 
+  folder = "S%sE%s"%(season, episode)
+
+  # print season, episode, chapter, title
+  with open('index.txt', 'w') as f:
+    f.write('%s::%s::Season %i, Episode %i\n'%(folder, title, season, episode))
+
+buildHTML()
 # generateThumbs()
 # generateHist()
-cleanHist()
+# cleanHist()
 
 
 
